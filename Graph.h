@@ -2,6 +2,9 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include <algorithm>
+
+#define INF 99999999
 using namespace std;
 class Graph
 {
@@ -9,6 +12,7 @@ private:
 	int nodes_n, edges_n;
 	vector< vector< pair<int, int> > >vect;
 	vector<double>output_centrality;
+	void floydWarshall()ö
 public:
 	Graph();
 	void Read_InputFile();
