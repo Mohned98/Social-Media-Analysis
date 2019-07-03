@@ -4,36 +4,40 @@
 #include <utility>
 #include <fstream>
 #include <string>
-//#include <bits/stdc++.h> 
 #include <iostream>
-#include <sstream>
+#include <iomanip>
+#include <functional>
+#include <windows.h>
+#include <cstdlib>
 #define INF 999999
 #define BLACK 0x000000
 #define WHITE 0xFFFFFF
 #define BLUE 0x0000FF
 #define RED 0xFF0000
+
 using namespace std;
 class Graph
 {
 private:
 	int nodes_n, edges_n;
+	string file_name;
 	vector< vector< pair<int, int> > >vect;
 	vector<double>output_centrality;
-	vector< pair<pair<int,int>, int>>edges;
+	vector< pair<pair<int, int>, int>>edges;
+
+	void shortestPath(int src, vector<int>& dist);
+	double sum_vector(vector<int>&x, unsigned int size);
+	int max_weight();
+	double max_closeness();
 public:
-	 Graph(int v);
-	 Graph();
-	void visualization_input();
+	Graph(string file_name);
 	void Read_InputFile();
+	void PrintOutput();
 	void DegreeCentrality();
 	void ClosenessCentrality();
 	void BetweennessCentrality();
-	void PrintOutput();
-	void shortestPath(int src, vector<int>& dist);
-	void addEdge(int u, int v, int w);
+	void visualization_input();
 	void visualize();
-	int max_weight();
-	double max_closeness();
-	 ~Graph();
+	~Graph();
 };
 

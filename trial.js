@@ -1,15 +1,14 @@
  var graph = {
 	nodes: [
- 	 	{ id: "n0", label: "A", x: 3, y: 1, size: 4, color: '#579720'},
- 	 	{ id: "n1", label: "B", x: 4, y: 2, size: 5, color: '#739502'},
- 	 	{ id: "n2", label: "C", x: 5, y: 3, size: 2.6, color: '#356024'},
- 	 	{ id: "n3", label: "D", x: 0, y: 0, size: 5, color: '#739502'}
+ 	 	{ id: "n0", label: "0", x: 0, y: 0, size: 76.6667, color: '#17496736'},
+ 	 	{ id: "n1", label: "1", x: 0.58, y: 1.1, size: 106, color: '#255'},
+ 	 	{ id: "n2", label: "2", x: 1.36, y: -0.08, size: 76.6667, color: '#17496736'},
+ 	 	{ id: "n3", label: "3", x: 0.48, y: 1.13, size: 63.3333, color: '#11904336'}
  	],
 	edges: [
- 	 	{ id: "e0", source: "n0" , target: "n2", color: '#16777200', type:'line', size: 5},
- 	 	{ id: "e1", source: "n1" , target: "n0", color: '#1677720', type:'line', size: 0.95},
- 	 	{ id: "e2", source: "n0" , target: "n3", color: '#8388600', type:'line', size: 2.75},
- 	 	{ id: "e3", source: "n3" , target: "n1", color: '#1677720', type:'line', size: 0.95},
- 	 	{ id: "e4", source: "n2" , target: "n3", color: '#6710880', type:'line', size: 5 },
+ 	 	{ id: "e0", source: "n0" , target: "n1", color: '#65280', type:'line', size: 19.5},
+ 	 	{ id: "e1", source: "n0" , target: "n2", color: '#65280', type:'line', size: 19.5},
+ 	 	{ id: "e2", source: "n1" , target: "n2", color: '#65280', type:'line', size: 19.5},
+ 	 	{ id: "e3", source: "n1" , target: "n3", color: '#65280', type:'line', size: 5 },
  	] 
 }

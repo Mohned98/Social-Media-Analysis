@@ -5,14 +5,17 @@
 #include <iostream>
 #include "Graph.cpp"
 #include "closeness_centrality.cpp"
+#include "degree_centrality.cpp"
 using namespace std;
 int main()
 {
-	Graph g;
+	Graph g("input.txt");
 	g.Read_InputFile();
-	g.ClosenessCentrality();
+	//g.ClosenessCentrality();
+	g.DegreeCentrality();
 	g.PrintOutput();
 	g.visualize();
+	//open_html();
 	return 0;
 
 }
