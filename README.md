@@ -20,6 +20,7 @@ Graph theory applications based project
   + a node
   + b node
   + c weight between a and b
+* Launch the executable file to show the Visualization
 
 ## Output Description
 * Print n lines showing the centrality measure for all the nodes
@@ -43,4 +44,4 @@ Graph theory applications based project
 * Measures the number of times a node lies on the shortest path between other nodes
 * Using Floyd-Warshall Algorithm in implementation
 * Takes input from input.txt file
-
+* Has an executable for Graph Visualizations in which each node has its own betweeness Centrality
