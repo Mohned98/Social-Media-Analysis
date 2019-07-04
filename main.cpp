@@ -3,9 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
-#include "Graph.cpp"
-#include "closeness_centrality.cpp"
-#include "degree_centrality.cpp"
+#include "Graph.h"
 using namespace std;
 int main()
 {
